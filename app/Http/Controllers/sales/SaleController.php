@@ -173,18 +173,17 @@ class SaleController extends Controller
 	{
 		$id=Auth::user()->staff->staff_id;
 
-            $staff_collection=DB::table('tbl_staff as s')
-             ->leftjoin('tbl_roles as z','z.role_id','=','s.role_id')
-             ->leftjoin('tbl_state as state','state.state_id','=','s.state_id')
-            ->select('s.*','role_name','state_name')->where('s.staff_id','<>',0)->get();
+        $sales_collection = DB::table('tbl_sales as sales')
+            ->leftjoin('tbl_staff as s', 's.staff_id', '=', 'sales.staff_id')
+            ->select('sales.*', 'first_name', 'middle_name', 'last_name')
+            ->orderBy('date','desc')
+            ->get();
 
-        
-		$data = 
-		[
-		'staff_collection'	=> $staff_collection
-		];
+        $data=[
+            'sales_collection'=>$sales_collection
+        ];
 			
-		return view('staff.vista')->with($data);
+		return view('sales.vista')->with($data);
 	}
 
 }

@@ -34,6 +34,9 @@ Route::prefix('sales')->group(function() {
     //Save Sale
     Route::post('/save','sales\SaleController@save')->name('save_sale');
 
+    //View Sale
+    Route::get('/view','sales\SaleController@vista')->name('view_sale');
+
 });
 
 

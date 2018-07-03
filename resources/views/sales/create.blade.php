@@ -109,7 +109,7 @@
 					<td class="center">{{$sales->item_qty}}</td>
 					<td class="center">{{number_format($sales->amount,2)}}</td>
 					<td class="center">{{$sales->first_name." ".$sales->middle_name." ".$sales->last_name}}</td>
-					<td class="center">{{$sales->date}}</td>
+					<td class="center">{{date("h:iA \o\\n D jS F, Y",strtotime($sales->date))}}</td>
 				</tr>
 						<?php
 							$a++;
