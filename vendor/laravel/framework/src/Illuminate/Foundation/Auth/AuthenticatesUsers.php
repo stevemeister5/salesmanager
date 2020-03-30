@@ -5,7 +5,6 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Session;
 
 trait AuthenticatesUsers
 {
@@ -142,7 +141,7 @@ trait AuthenticatesUsers
      */
     public function username()
     {
-        return 'username';
+        return 'email';
     }
 
     /**
@@ -156,8 +155,8 @@ trait AuthenticatesUsers
         $this->guard()->logout();
 
         $request->session()->invalidate();
-        Session::flash("success", "You are now logged out");
-        return redirect('login');
+
+        return redirect('/');
     }
 
     /**

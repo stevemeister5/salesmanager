@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
+class ComposerStaticInit78f5cddcf4aabea651440e91b451c898
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -14,8 +14,8 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -113,8 +113,8 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -314,16 +314,9 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
     );
 
     public static $classMap = array (
-        'App\\Area' => __DIR__ . '/../..' . '/app/Area.php',
-        'App\\Asset' => __DIR__ . '/../..' . '/app/Asset.php',
-        'App\\Asset_Cat' => __DIR__ . '/../..' . '/app/Asset_Cat.php',
-        'App\\Asset_Store' => __DIR__ . '/../..' . '/app/Asset_Store.php',
-        'App\\Branch' => __DIR__ . '/../..' . '/app/Branch.php',
-        'App\\Branch_Class' => __DIR__ . '/../..' . '/app/Branch_Class.php',
-        'App\\Branch_Type' => __DIR__ . '/../..' . '/app/Branch_Type.php',
+        'App\\City' => __DIR__ . '/../..' . '/app/City.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
-        'App\\Guest_House' => __DIR__ . '/../..' . '/app/Guest_House.php',
         'App\\Http\\Controllers\\AdditionalDataController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdditionalDataController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -331,14 +324,15 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/DashboardController.php',
+        'App\\Http\\Controllers\\sales\\SaleController' => __DIR__ . '/../..' . '/app/Http/Controllers/sales/SaleController.php',
         'App\\Http\\Controllers\\staff\\StaffController' => __DIR__ . '/../..' . '/app/Http/Controllers/staff/StaffController.php',
+        'App\\Http\\Controllers\\staff\\StaffControllerManage' => __DIR__ . '/../..' . '/app/Http/Controllers/staff/StaffControllerManage.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'App\\LGA' => __DIR__ . '/../..' . '/app/LGA.php',
         'App\\Mail\\WelcomeStaff' => __DIR__ . '/../..' . '/app/Mail/WelcomeStaff.php',
         'App\\Maintab' => __DIR__ . '/../..' . '/app/Maintab.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
@@ -346,24 +340,10 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
-        'App\\Region' => __DIR__ . '/../..' . '/app/Region.php',
+        'App\\Sales' => __DIR__ . '/../..' . '/app/Sales.php',
         'App\\Settings' => __DIR__ . '/../..' . '/app/Settings.php',
         'App\\Staff' => __DIR__ . '/../..' . '/app/Staff.php',
-        'App\\Staff_Bank' => __DIR__ . '/../..' . '/app/Staff_Bank.php',
-        'App\\Staff_Dept' => __DIR__ . '/../..' . '/app/Staff_Dept.php',
-        'App\\Staff_Docs' => __DIR__ . '/../..' . '/app/Staff_Docs.php',
-        'App\\Staff_Docs_Type' => __DIR__ . '/../..' . '/app/Staff_Docs_Type.php',
-        'App\\Staff_Education' => __DIR__ . '/../..' . '/app/Staff_Education.php',
-        'App\\Staff_Education_Class' => __DIR__ . '/../..' . '/app/Staff_Education_Class.php',
-        'App\\Staff_Education_Qual' => __DIR__ . '/../..' . '/app/Staff_Education_Qual.php',
-        'App\\Staff_Education_Type' => __DIR__ . '/../..' . '/app/Staff_Education_Type.php',
-        'App\\Staff_Level' => __DIR__ . '/../..' . '/app/Staff_Level.php',
-        'App\\Staff_NOK_Type' => __DIR__ . '/../..' . '/app/Staff_NOK_Type.php',
-        'App\\Staff_Resume_Type' => __DIR__ . '/../..' . '/app/Staff_Resume_Type.php',
         'App\\Staff_Role' => __DIR__ . '/../..' . '/app/Staff_Role.php',
-        'App\\Staff_Status' => __DIR__ . '/../..' . '/app/Staff_Status.php',
-        'App\\Staff_Unit' => __DIR__ . '/../..' . '/app/Staff_Unit.php',
-        'App\\Staff_Work' => __DIR__ . '/../..' . '/app/Staff_Work.php',
         'App\\State' => __DIR__ . '/../..' . '/app/State.php',
         'App\\Subertab' => __DIR__ . '/../..' . '/app/Subertab.php',
         'App\\Subtab' => __DIR__ . '/../..' . '/app/Subtab.php',
@@ -3648,10 +3628,10 @@ class ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5b27856b8b4664f8d0a08fef6a2bf434::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit78f5cddcf4aabea651440e91b451c898::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit78f5cddcf4aabea651440e91b451c898::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit78f5cddcf4aabea651440e91b451c898::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit78f5cddcf4aabea651440e91b451c898::$classMap;
 
         }, null, ClassLoader::class);
     }
