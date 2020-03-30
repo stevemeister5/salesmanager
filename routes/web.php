@@ -12,7 +12,7 @@
 */
 
 //Redirect from home page straight to login page
-Route::view('/', 'auth.login');
+Route::view('/', 'dashboard');
 
 //Activate Authentication
 Auth::routes();
